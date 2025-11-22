@@ -1,0 +1,62 @@
+/* ------------------------------------------------------------------- */
+/* CSS Básico e Box Model (Exercício 4) */
+/* ------------------------------------------------------------------- */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5; /* Cor de fundo leve para o corpo da página */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo para <header> */
+header {
+    /* Cores */
+    background-color: #3498db; /* Azul */
+    color: white; /* Texto branco */
+
+    /* Box Model para Evidenciar */
+    padding: 20px; /* Espaçamento interno */
+    border: 5px solid #2980b9; /* Borda azul mais escura */
+    margin-bottom: 30px; /* Margem externa na parte inferior */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+    border-radius: 8px;
+}
+
+/* Estilo para <main> */
+main {
+    /* Cores */
+    background-color: #ecf0f1; /* Cinza claro */
+    color: #333; /* Texto escuro */
+
+    /* Box Model para Evidenciar */
+    padding: 10px; /* Espaçamento interno menor */
+    border: 3px solid #bdc3c7; /* Borda cinza */
+    margin-bottom: 30px; /* Margem externa na parte inferior */
+    border-radius: 8px;
+    display: flex; /* Usado para exibir as seções lado a lado (opcional) */
+    gap: 20px; /* Espaço entre as seções */
+}
+
+/* Estilo para <footer> */
+footer {
+    /* Cores */
+    background-color: #2c3e50; /* Cinza escuro/quase preto */
+    color: #ecf0f1; /* Texto muito claro */
+    text-align: center;
+
+    /* Box Model para Evidenciar */
+    padding: 15px; /* Espaçamento interno */
+    border: 2px dashed #95a5a6; /* Borda tracejada */
+    margin-top: 20px; /* Margem externa no topo */
+    border-radius: 8px;
+}
+
+/* Estilo para as seções dentro do main */
+main section {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    flex: 1; /* Permite que as seções se dividam igualmente (Box Model e Flex) */
+}

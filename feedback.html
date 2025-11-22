@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3: Formulário de Feedback</title>
+</head>
+<body>
+
+    <h1>Formulário de Feedback</h1>
+    <p>Preencha os campos abaixo para enviar sua avaliação sobre nossos serviços.</p>
+
+    <!-- O formulário completo -->
+    <form action="/enviar-feedback" method="POST">
+        <fieldset>
+            <legend>Informações de Contato</legend>
+            
+            <!-- Nome -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <br><br>
+
+            <!-- E-mail -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            
+            <!-- Endereço Completo -->
+            <label for="endereco">Endereço Completo:</label>
+            <input type="text" id="endereco" name="endereco" placeholder="Rua, Número, Bairro, Cidade" required>
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Detalhes do Feedback</legend>
+
+            <!-- Tipo de feedback (usando um campo de seleção) -->
+            <label for="tipo">Tipo de Feedback:</label>
+            <select id="tipo" name="tipo_feedback" required>
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="sugestao">Sugestão</option>
+                <option value="elogio">Elogio</option>
+                <option value="relato_problema">Relato de Problema</option>
+            </select>
+            <br><br>
+
+            <!-- Campo para o Feedback (área de texto) -->
+            <label for="feedback_texto">Seu Feedback:</label>
+            <br>
+            <textarea id="feedback_texto" name="feedback_texto" rows="5" cols="50" required placeholder="Escreva seu comentário detalhado aqui..."></textarea>
+            <br><br>
+
+        </fieldset>
+
+        <!-- Botão de Envio -->
+        <button type="submit">Enviar Avaliação</button>
+    </form>
+
+</body>
+</html>
