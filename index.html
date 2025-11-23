@@ -4,29 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercício 1: Estrutura Semântica</title>
-    <!-- O estilo será vinculado aqui no Exercício 4 -->
+    <!-- O estilo será vinculado aqui no Exercício 4/5/7 -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <!-- Cabeçalho (Header) - Contém o título e parágrafo introdutório -->
+    <!-- Cabeçalho (Header) - Contém o título, parágrafo introdutório e a navegação -->
     <header>
         <h1>Minha Página de Projeto</h1>
         <p>Esta é uma introdução sobre o que a página representa, usando a tag header para o conteúdo de topo.</p>
+
+        <!-- Navegação padrão (Exercício 7) -->
+        <nav class="menu-desktop">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Botão Hamburguer (oculto por padrão em telas grandes) -->
+        <button class="menu-hamburger" aria-label="Abrir Menu">
+            &#9776; <!-- Ícone Hamburger unicode -->
+        </button>
+
+        <!-- Menu Mobile (oculto por padrão em telas grandes) -->
+        <nav class="menu-mobile" id="menu-mobile">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="listas.html">Listas</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+            </ul>
+        </nav>
+        
     </header>
 
-    <!-- Conteúdo Principal (Main) - Dividido em Missão e Visão -->
+    <!-- Conteúdo Principal (Main) - Dividido em Missão, Visão e Nota Importante -->
     <main>
         <!-- Seção "Missão" -->
         <section id="missao">
             <h2>Missão</h2>
-            <p>Nossa missão é demonstrar o uso correto de tags semânticas do HTML5, organizando o conteúdo de forma lógica e acessível. Esta seção prova a utilização da tag "section" dentro do "main".</p>
+            <!-- Aplica a classe .destaque (Exercício 5) -->
+            <p class="destaque">Nossa missão é demonstrar o uso correto de tags semânticas do HTML5, organizando o conteúdo de forma lógica e acessível. Esta seção prova a utilização da tag "section" dentro do "main".</p>
         </section>
 
         <!-- Seção "Visão" -->
         <section id="visao">
             <h2>Visão</h2>
             <p>Almejamos que esta estrutura sirva de base para projetos futuros, aplicando boas práticas de desenvolvimento web desde o início, facilitando a estilização (CSS) e a manutenção.</p>
+        </section>
+        
+        <!-- Seção Adicional para o ID Importante (Exercício 5) -->
+        <section id="adicional">
+            <h2>Nota Importante</h2>
+            <!-- Aplica o ID #importante -->
+            <p id="importante">Este parágrafo é crucial e recebeu uma borda superior espessa via seletor de ID no CSS, demonstrando a aplicação do seletor específico #importante.</p>
         </section>
     </main>
 
